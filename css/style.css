@@ -116,6 +116,7 @@ section {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .header-adress-link:hover {
   color: var(--hover-color);
 }
@@ -128,6 +129,14 @@ section {
 /* --------------------------------------------- Герой --------------------------------------------- */
 .hero {
   background-color: var(--background-hero);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -146,6 +155,7 @@ section {
   max-width: 696px;
   margin: 0 auto 30px;
 }
+
 .hero-btn {
   font-family: "Roboto";
   font-weight: 700;
@@ -185,10 +195,16 @@ section {
 .btn:hover {
   background-color: var(--hover-color);
   color: var(--secondary-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .btn:focus {
   background-color: var(--hover-color);
   color: var(--secondary-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 /* --------------------------------------------- Чому ми? --------------------------------------------- */
 .visually-hidden {
@@ -289,6 +305,9 @@ section {
   border-radius: 0px 0px 4px 4px;
   flex-wrap: wrap;
   max-width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-h-two {
   font-family: "Roboto";
@@ -417,9 +436,14 @@ section {
   gap: 30px;
 }
 
-.works-item-bottom {
-  /* align-items: center; */
-  /* border: 1px solid #eeeeee; */
+.works-item-bottom:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.works-item-bottom:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .works-list-btn {
