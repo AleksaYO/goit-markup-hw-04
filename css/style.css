@@ -183,10 +183,10 @@ section {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover {
-  background-color: #188ce8;
+  background: #188ce8;
 }
 .hero-btn:focus {
-  background-color: #188ce8;;
+  background: #188ce8;
 }
 .btn {
   cursor: pointer;
