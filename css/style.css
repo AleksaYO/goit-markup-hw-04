@@ -1,10 +1,11 @@
 :root {
   --background-btn: #f5f4fa;
   --background-hero: #2f303a;
-  --text-color: #000000;
+  --text-color: #212121;
   --hover-color: #2196f3;
   --adress-color: #757575;
   --secondary-hover: #ffffff;
+  --icon-color: #afb1b8;
 }
 h1,
 h2,
@@ -104,6 +105,7 @@ section {
   gap: 50px;
   align-items: center;
 }
+
 .header-adress-link {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -117,11 +119,19 @@ section {
   padding-bottom: 32px;
 }
 
+.header-adress-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .header-adress-link:hover {
   color: var(--hover-color);
+  fill: var(--hover-color);
 }
 .header-adress-link:focus {
   color: var(--hover-color);
+  fill: var(--hover-color);
 }
 .current {
   color: var(--hover-color);
@@ -172,10 +182,10 @@ section {
   height: 50px;
 }
 .hero-btn:hover {
-  background-color: #188ce8;
+  background-color: var(--hover-color);
 }
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--hover-color);
 }
 .btn {
   cursor: pointer;
@@ -227,6 +237,19 @@ section {
 
 .advantages-item {
   width: 270px;
+}
+
+.icon-advanteges-box {
+  background-color: #f5f4fa;
+  width: 270px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+.icon-advanteges {
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages-list {
@@ -309,6 +332,36 @@ section {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+.team-icon-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.team-icon-link {
+  display: flex;
+  background-color: #ffffff;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--icon-color);
+}
+
+.team-icon-link:hover {
+  fill: var(--secondary-hover);
+  background-color: var(--hover-color);
+}
+
+.team-icon-link:focus {
+  fill: var(--secondary-hover);
+  background-color: var(--hover-color);
+}
+
 .team-h-two {
   font-family: "Roboto";
   font-weight: 700;
@@ -336,11 +389,109 @@ section {
   color: var(--adress-color);
   margin-top: 10px;
 }
+
+/* --------------------------------------------- Клиенты --------------------------------------------- */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-container {
+}
+
+.client-h-two {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
+.client-icon-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.client-icon-item {
+}
+.client-icon-link {
+  fill: #afb1b8;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
+.client-icon-link:hover {
+  fill: var(--hover-color);
+  border: 1px solid var(--hover-color);
+}
+
+.client-icon-link:focus {
+  fill: var(--hover-color);
+  border: 1px solid var(--hover-color);
+}
+
 /* --------------------------------------------- Укриття --------------------------------------------- */
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-box-one {
+  margin-right: 70px;
+  width: 230px;
+}
+
+.footer-box-two {
+  padding-top: 12px;
+}
+
+.footer-h-three {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-hover);
+  margin-bottom: 20px;
+}
+
+.footer-icon-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon-link {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--secondary-hover);
+}
+
+.footer-icon-link:hover {
+  background: var(--hover-color);
+}
+
+.footer-icon-link:focus {
+  background: var(--hover-color);
 }
 
 .footer-logo {
