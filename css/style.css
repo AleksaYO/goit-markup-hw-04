@@ -139,7 +139,7 @@ section {
 }
 /* --------------------------------------------- Герой --------------------------------------------- */
 .hero {
-  background-color: var(--background-hero);
+  background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -450,6 +450,7 @@ section {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-box-one {
@@ -457,9 +458,6 @@ section {
   width: 230px;
 }
 
-.footer-box-two {
-  padding-top: 12px;
-}
 
 .footer-h-three {
   font-family: "Roboto";
@@ -540,7 +538,7 @@ section {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--adress-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-adress-link:focus {
   color: var(--hover-color);
